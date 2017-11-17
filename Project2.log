@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 OCT 2017 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 NOV 2017 09:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1226,7 +1226,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-<UW.jpg, id=152, 505.89pt x 328.5876pt>
+<UW.jpg, id=188, 505.89pt x 328.5876pt>
 File: UW.jpg Graphic file (type jpg)
  <use UW.jpg>
 Package pdftex.def Info: UW.jpg used on input line 68.
@@ -1234,21 +1234,21 @@ Package pdftex.def Info: UW.jpg used on input line 68.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./UW.jp
-g>] (./Project2.toc)
+g>] (./Project2.tocpdfTeX warning (ext4): destination with the same identifier 
+(name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 ...rline {4.1}2x2 Matrix}{16}{subsection.4.1}
+                                                   [1])
 \tf@toc=\write4
 \openout4 = `Project2.toc'.
 
-
-(./Project2.lof)
+ (./Project2.lof)
 \tf@lof=\write5
 \openout5 = `Project2.lof'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 \clearpage
-                [1] [2]
+
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
@@ -1352,42 +1352,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--514
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 559--568
+Underfull \hbox (badness 10000) in paragraph at lines 559--569
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
 
  []
 
 [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 624.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 624.
+Underfull \hbox (badness 10000) in paragraph at lines 626--628
+
+ []
+
+
+LaTeX Warning: Citation `textbook' on page 15 undefined on input line 631.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
+
+ []
+
+
+LaTeX Warning: Citation `textbook' on page 15 undefined on input line 641.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--644
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--673
+
+ []
+
+<determinant.png, id=390, 521.95pt x 411.5375pt>
+File: determinant.png Graphic file (type png)
+ <use determinant.png>
+Package pdftex.def Info: determinant.png used on input line 681.
+(pdftex.def)             Requested size: 313.17241pt x 246.92441pt.
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
+
+ []
+
+[17 <./determinant.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 725--729
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 748--756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--756
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
  (./Project2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 624.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 624.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 Package rerunfilecheck Info: File `Project2.out' has not changed.
-(rerunfilecheck)             Checksum: 69E36D877B20A7B2C5F284F645F3B128;2561.
+(rerunfilecheck)             Checksum: 0B4D5570B90BBD5D376D38443426601C;3124.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 624.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 20186 strings out of 493014
- 371809 string characters out of 6133351
- 552005 words of memory out of 5000000
- 23391 multiletter control sequences out of 15000+600000
- 19341 words of font info for 73 fonts, out of 8000000 for 9000
+ 20233 strings out of 493014
+ 372403 string characters out of 6133351
+ 553119 words of memory out of 5000000
+ 23413 multiletter control sequences out of 15000+600000
+ 19648 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,20n,42p,10381b,6977s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,20n,42p,10381b,7033s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1401,10 +1471,10 @@ b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b>
-Output written on Project2.pdf (18 pages, 332274 bytes).
+Output written on Project2.pdf (22 pages, 649819 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 

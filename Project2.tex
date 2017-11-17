@@ -276,7 +276,7 @@ With the second expression for dot product, the length of a vector can be expres
 
 
 \subsection{Projection}
-Projection is used to find the component of one vector in the direction of the vector that you are projecting onto.//
+Projection is used to find the component of one vector in the direction of the vector that you are projecting onto.\\
 The formula for projection is as follows:
 \begin{equation}
 \vectorproj[x]{y} = \frac{\vec{x}\cdot\vec{y}}{{||\vec{x}||}^2}\vec{x} 
@@ -563,6 +563,7 @@ Domain is the dimension of the input vector: $\R^2$\\
 Codomain is the dimension of the output vector: $\R^2$\\
 \textbf{Linearity}\\
 We see that there are only addition, and scalar multiplication, therefore it has a good chance of being linear mapping.\\
+Define $\vec{x} = \begin{bmatrix}x_1\\x_2\end{bmatrix}, \vec{y} = \begin{bmatrix}y_1\\y_2\end{bmatrix} and t \in \R$
 We must prove that $L(t\vec{x}+\vec{y}) =tL(\vec{x}) + L(\vec{y})$.\\
 Note that $t\vec{x} + \vec{y} = \begin{bmatrix}tx_1+y_1\\tx_2+y_2\end{bmatrix}$\\
 \begin{center}
@@ -619,6 +620,150 @@ If we use matrix multiplication,
 \begin{bmatrix}2 & 3\\1 & 0\end{bmatrix}\begin{bmatrix}2 \\ 3\end{bmatrix}=  \begin{bmatrix}13 \\ 2\end{bmatrix}
 \end{equation}
 
+\subsection{Composite Mapping}
+It is possible to represent two linear mappings into one matrix. This is called the \textbf{Composition of Linear Mapping}.
+
+The definition straight out of textbook is as follows:\\
+Let L: $\R^n \rightarrow \R^m$ and $M: \R^m \rightarrow \R^p$ be linear mappings. The composition of $M \circ L$ is defined by \\
+\begin{center}
+$(M \circ L)(\vec{x}) = M(L(\vec{x}))$
+\end{center} 
+\cite{textbook}
+It is important that the codomain of the first mapping, $L$ has to be same as the domain of the second mapping, $M$. This makes sense if we recall back to how the transformed vector from $L$ has to be inserted into $M$.
 
 
+Using this concept, we can generalize this with this theorem from the book:\\
+Let L: $\R^n \rightarrow \R^m$, $M: \R^n \rightarrow \R^m$, and $N: \R^m \rightarrow \R^p$  be linear mappings, and $t \in \R$. Then\\
+\begin{center}
+$[L+M] = [L] + [M]$, $[tL] = t[L]$, $(N \circ L) = [N][L]$\\
+Where [L], [M], and [N] represent the standard matrices of each linear mapping.
+\end{center} 
+\cite{textbook}
+The above remark about how the codomain of the first mapping and domain of the second mapping having to match up makes sense in the context of matrix mapping.\\
+Recall that codomain of a mapping is the number of rows, and domain of a mapping is the number of columns. Since matrix multiplications only work if the inner dimensions are the same, we can conclude that it is true.\\
+
+
+\subsection{Geometrical Transformation}
+Geometrical Transformation are specific types of linear/matrix mapping that can be described geometrically in space. These transformation include \textbf{Rotation, Stretch, Contraction/Dilation, Shear, and Reflections}. There is a document on learn that highlights all the geometrical transformations that you need. It has way more detail that I can ever put on a ''summary'' sheet, so go to that to Learn more.
+
+\section{Determinants}
+Determinants are a characteristic of a square (nxn) matrix, that helps you determine whether a system has a unique solution or not. Calculation determinants is very straight forward.
+\subsection{2x2 Matrix}
+Determinant of 2x2 Matrix is the foundation on finding the determinant of nxn matrix.\\
+For a matrix defined by\\
+\begin{center}
+$
+A = \begin{bmatrix}
+   a_{11} & a_{12}\\ a_{21} & a_{22}\\ 
+ \end{bmatrix}
+$ 
+The determinant is calculated by\\
+\begin{equation}
+det(A) = a_{11}a_{22} - a_{12}a_{22}
+\end{equation}
+\end{center}
+
+\subsection{nxn Matrix}
+nxn matrices are calculated through the process of \textbf{Cofactor Expansion}.
+That is, 
+\begin{equation}
+det(A) = a_{11}C_{11} + a_{12}C_{12}+...+a{1n}C_{1n}
+\end{equation}
+where\\
+\begin{center}
+$C_{ij} = (-1)^{i+j}detA(i,j)$
+\end{center}
+What this all means is that cofactor is the determinant of the matrix obtained by \textbf{covering up the ith row and jth column}.
+Also, the above det(A) equation is cofactor expansion along a first row, but it is possible to cofactor expand along \textbf{along any row or column}.
+The reason why I said that 2x2 matrix is the basis of all determinant calculation is that once matrix is greater than 3x3, after cofactor expansion, you realize that you must find the determinant of a matrix that is dimension of n-1xn-1. Then, cofactor expansion must be applied repeatedly until you end up with 2x2 matrix where the determinant can be calculated directly. Since this is really hard to type up, I will simply post a picture of a question that I did.
+\begin{figure}[!htb]
+      	\centering
+      	\includegraphics[scale=0.6]{determinant.png}
+      	\caption{Determinant Calculation \label{fig:Determinant}}
+\end{figure}
+As you can see, cofactor expanding a 4x4 matrix ends up with 3x3 matrices which also needs to be calculated using cofactor expansion.
+\textbf{Pro Tip: Pick a row/column with the most zeros in order to do the least amount of calculation.}
+
+\subsection{Properties of Determinant}
+\begin{enumerate}
+\item It is possible perform cofactor expansion along any row or column. Suggested to do it along row or row with most zeros. 
+\item If A is an nxn matrix that is Lower/Upper Triangular Matirx, them det(A) is the product of the diagonal entries. \\$det(A) = a_{11}a_{22}...a_{nn}$
+\item If A is an nxn matrix, then det(A)=det$(A^T)$
+\item Scalar Multiple of ith row or jth column scales the determinant\\
+\begin{center}
+$A = \begin{bmatrix}$
+   $a_{11} & a_{12}\\ a_{21} & a_{22}$ 
+ $\end{bmatrix}$
+ $B = \begin{bmatrix}$
+   $ta_{11} & ta_{12}\\ a_{21} & a_{22}$ 
+ $\end{bmatrix}$\\
+ det(B) = tdet(A)
+ \end{center}
+\item Swapping two rows or columns multiplies the determinant by -1
+\begin{center}
+$A = \begin{bmatrix}$
+   $a_{11} & a_{12}\\ a_{21} & a_{22}$ 
+ $\end{bmatrix}$
+ $B = \begin{bmatrix}$
+   $a_{21} & a_{22}\\ a_{11} & a_{12}$ 
+ $\end{bmatrix}$\\
+ det(B) = -det(A)
+ \end{center}
+ Every time a swapping happens, multiply the determinant by -1.
+ \item Adding a scalar multiple of one row/column to another row
+ \item If one row/column of an nxn matrix contains only zeros, then det(A) = 0.\\
+ This also means that if there is a row or column that repeats, then det(A) = 0 since row reduction does not change the determinant.
+ 
+\end{enumerate}
+Just as a clarification, even though we only learned EROs, colum operations are valid while solving for determinants due to the property of det(A) = det($A^T$). 
+
+\subsection{Cramer's Rule}
+A system of linear equation can be represented as $A\vec{x}=\vec{b}$ where $A$ is the coefficient matrix, $\vec{x}$ is the vector for varialbes, and $\vec{b}$ is the vector made from ''answers''. Then, Cramer's Rule is defined as following:
+\begin{center}
+$x_i = detA_i/detA$
+\end{center}
+Where $A_i$ is A matrix but with ith column replaced with $\vec{b}$.
+The advantage of Cramer's Rule is that it is possible to determine only one variable without solving for the whole system. Which means, if you only care about the value of one variable, you can reduce the amount of computation.\\
+\textbf{ex}\\
+Consider the system of equation \\
+\begin{center}
+$\begin{cases} 2x_1 - 7x_2 = 3 \\  5x_1+4x_2 = -17 \end{cases}$
+\end{center}
+The coefficient matrix will be $A = \begin{bmatrix}$
+   $2 & -7\\ 5 & 4$ 
+ $\end{bmatrix}$ and $\vec{b} = \begin{bmatrix}$
+   $3\\ -17$ 
+ $\end{bmatrix}$
+It is important to note that if you are row reducing the A matrix and will continue to use that matrix, you must substitute in the \textbf{Row Reduced version of $\vec{b}$} or else you will yield incorrect answer. This is why I suggest only using row reduction to find the determinant, and use the original A matrix and $\vec{b}$.
+
+
+
+
+
+\newpage
+\begin{appendices}
+\appendix 
+\section{Compilation of Useful Formulas}
+\label{appendix:Formula}
+\textbf{Projection}: $\vectorproj[x]{y} = \frac{\vec{x}\cdot\vec{y}}{{||\vec{x}||}^2}\vec{x}$\\\\
+
+\textbf{Norm of Projection}: $||\vectorproj[x]{y}|| = |\frac{\vec{y}\cdot\vec{x}}{||\vec{x}||}|$\\\\
+
+\textbf{Perpendicular}: $\vectorperp[x]{y} = \vec{y} - \vectorproj[x]{y}$
+
+\textbf{Volume of Parallelepiped}: V = $|\vec{u}\cdot\vec{w}$x$\vec{v}|\\$\\
+or V = $|det(\vec{u}\;\vec{w}\; \vec{v})| This works for n-d parallelotrope$\\\\
+
+\textbf{Determinant of 2x2 Matrix}: det(A) = $a_{11}a_{21} - a_{21}a_{22}$\\\\
+
+\textbf{Determinant of nxn Matrix}: det(A) = $det(A) = a_{11}C_{11} + a_{12}C_{12}+...+a{1n}C_{1n}$ where $C_{ij} = (-1)^{i+j}detA(i,j)$\\\\
+
+\textbf{Eigenvalue}: $det(A-\lambda I) = 0$ The roots of this polynomial is the eigenvalues\\\\
+
+\textbf{Eigenvector}: General Solution to the system $A-\lambda I = \vec{0}$\\\\
+
+\thispagestyle{empty}
+\end{appendices}
+
+ 
 \end{document}

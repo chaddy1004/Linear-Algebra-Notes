@@ -35,3 +35,12 @@
 \contentsline {subsubsection}{\numberline {3.6.1}Example:Proving Linear Mapping}{14}{subsubsection.3.6.1}
 \contentsline {subsection}{\numberline {3.7}Standard Matrix of a Linear Mapping}{14}{subsection.3.7}
 \contentsline {subsubsection}{\numberline {3.7.1}Example of Standard Matrix}{15}{subsubsection.3.7.1}
+\contentsline {subsection}{\numberline {3.8}Composite Mapping}{15}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Geometrical Transformation}{16}{subsection.3.9}
+\contentsline {section}{\numberline {4}Determinants}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}2x2 Matrix}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}nxn Matrix}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Properties of Determinant}{17}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Cramer's Rule}{18}{subsection.4.4}
+\contentsline {section}{Appendices}{19}{section*.4}
+\contentsline {section}{\numberline {A}Compilation of Useful Formulas}{19}{appendix.A}
