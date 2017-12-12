@@ -1,0 +1,64 @@
+\BOOKMARK [1][-]{section.1}{Chapter 1}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Vectors}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Vector Arithmetic}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Directed Line Segment}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Equation of a Line}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Subspaces}{section.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Subspace Example 1}{subsection.1.5}% 7
+\BOOKMARK [3][-]{subsubsection.1.5.2}{Subspace Example 2}{subsection.1.5}% 8
+\BOOKMARK [2][-]{subsection.1.6}{Linear Dependency}{section.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Linearly Dependent}{subsection.1.6}% 10
+\BOOKMARK [3][-]{subsubsection.1.6.2}{Linearly Independent}{subsection.1.6}% 11
+\BOOKMARK [3][-]{subsubsection.1.6.3}{Examples}{subsection.1.6}% 12
+\BOOKMARK [2][-]{subsection.1.7}{Norm of a Vector}{section.1}% 13
+\BOOKMARK [2][-]{subsection.1.8}{Dot Product}{section.1}% 14
+\BOOKMARK [3][-]{subsubsection.1.8.1}{Unit Vector}{subsection.1.8}% 15
+\BOOKMARK [2][-]{subsection.1.9}{Projection}{section.1}% 16
+\BOOKMARK [2][-]{subsection.1.10}{Equation of a Plane}{section.1}% 17
+\BOOKMARK [1][-]{section.2}{Chapter 2}{}% 18
+\BOOKMARK [2][-]{subsection.2.1}{System of Linear Equations}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.2}{System of Equation in Matrix Form}{section.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Homogeneous System}{subsection.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.3}{Elementary Row Operations}{section.2}% 22
+\BOOKMARK [2][-]{subsection.2.4}{REF and RREF}{section.2}% 23
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Solution Set}{subsection.2.4}% 24
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Rank}{subsection.2.4}% 25
+\BOOKMARK [1][-]{section.3}{Chapter 3}{}% 26
+\BOOKMARK [2][-]{subsection.3.1}{Matrix Operations}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Matrix Multiplication}{subsection.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.2}{Transpose of Matrix}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.3}{Matrix Inverse}{section.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Process of Finding Inverse}{subsection.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.4}{Important Properties}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.5}{Matrix Mapping}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.6}{Linear Mapping}{section.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Example:Proving Linear Mapping}{subsection.3.6}% 35
+\BOOKMARK [2][-]{subsection.3.7}{Standard Matrix of a Linear Mapping}{section.3}% 36
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Example of Standard Matrix}{subsection.3.7}% 37
+\BOOKMARK [2][-]{subsection.3.8}{Composite Mapping}{section.3}% 38
+\BOOKMARK [2][-]{subsection.3.9}{Geometrical Transformation}{section.3}% 39
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Representing Geometrical Transformation as Matrix}{subsection.3.9}% 40
+\BOOKMARK [1][-]{section.4}{Determinants}{}% 41
+\BOOKMARK [2][-]{subsection.4.1}{2x2 Matrix}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.2}{nxn Matrix}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.3}{Properties of Determinant}{section.4}% 44
+\BOOKMARK [2][-]{subsection.4.4}{Cramer's Rule}{section.4}% 45
+\BOOKMARK [1][-]{section.5}{Eigenvector and Diagonalization}{}% 46
+\BOOKMARK [2][-]{subsection.5.1}{Algebraic and Geometric Multiplicity}{section.5}% 47
+\BOOKMARK [2][-]{subsection.5.2}{Diagonalization}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.3}{Diagonalization Theorem}{section.5}% 49
+\BOOKMARK [1][-]{section.6}{Complex Numbers}{}% 50
+\BOOKMARK [2][-]{subsection.6.1}{Rectangular Form}{section.6}% 51
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Complex Conjugate}{subsection.6.1}% 52
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Some Properties}{subsection.6.1}% 53
+\BOOKMARK [2][-]{subsection.6.2}{Roots of Polynomial Equation}{section.6}% 54
+\BOOKMARK [2][-]{subsection.6.3}{Complex Plane}{section.6}% 55
+\BOOKMARK [2][-]{subsection.6.4}{Polar Form}{section.6}% 56
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Multiplication and Division with Polar Form}{subsection.6.4}% 57
+\BOOKMARK [2][-]{subsection.6.5}{Euler's Formula}{section.6}% 58
+\BOOKMARK [2][-]{subsection.6.6}{nth Roots}{section.6}% 59
+\BOOKMARK [1][-]{section.7}{Vector Spaces}{}% 60
+\BOOKMARK [2][-]{subsection.7.1}{Subspaces}{section.7}% 61
+\BOOKMARK [2][-]{subsection.7.2}{Homogeneous System of Linear Equation}{section.7}% 62
+\BOOKMARK [1][-]{section*.6}{Appendices}{}% 63
+\BOOKMARK [1][-]{appendix.A}{Compilation of Useful Formulas}{}% 64
