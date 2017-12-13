@@ -315,16 +315,17 @@ Expanding it out,
 \begin{equation}
 \begin{split}
 n_1(x_1-p_1)+n_2(x_2-p_2)+n_3(x_3-p_3)=0\\
-n_1x_1 + n_2x_2 +n_3x_3 - (p_1+p_2+p_3)= 0\\
+n_1x_1 + n_2x_2 +n_3x_3 - (n_1p_1+n_2p_2+n_3p_3)= 0\\
 \end{split}
 \end{equation} 
-Since $p_1,p_2, and p_3$ are given numbers, it is possible to group it as another real number, $d$.\\
+Since $(n_1p_1+n_2p_2+n_3p_3)$ are given numbers, it is possible to group it as another real number, $d$.\\
 \begin{equation}
 \begin{split}
 n_1x_1 + n_2x_2 +n_3x_3 - d = 0\\
 n_1x_1 + n_2x_2 +n_3x_3 = d\\
 \end{split}
 \end{equation}
+where $d = n\cdot p$.\\
 Expanding this same concept to $\R^n$,
 \begin{equation}
 n_1x_1 + n_2x_2 +n_3x_3...n_nx_n = d\\
@@ -903,7 +904,7 @@ Here are some properties of complex numbers that may be useful in solving questi
 \item Purely Real iff $\overline{z} = z$
 \item Purely Imaginary iff $\overline{z} = -z$
 \item $\overline{z_1+z_2} = \overline{z_1} + \overline{z_2}$
-\item $\overline{z_1z_2} = \overline{z_1}\overline{z_2}$
+\item $\overline{z_1z_2} = \overline{z_1}\:\overline{z_2}$
 \item $\overline{(z)^n} = \overline{(z)}^n$
 \item $z + \overline{z} = 2Re(z)$
 \item $z - \overline{z} = 2iIm(z)$
