@@ -467,9 +467,9 @@ In order for matrix multiplication to work, the inner dimension must match up. T
 The definition of matrix multiplication that I used a lot in my help session is the following:\\
 If we have two matrices $A_{nxm}B_{mxp}$, the product is defined as
 \begin{equation}
-(AB)_{ij}  = \vec{a_i} \cdot \vec{b_i} 
+(AB)_{ij}  = \vec{a_i} \cdot \vec{b_j} 
 \end{equation}
-where $\vec{a_i}$ represents the $i$th row of matrix A, and $\vec{b_i}$ represents the $j$th row of matrix B, and $(AB)_{ij}$ represents the $ij$-th entry of the resulting matrix. \\
+where $\vec{a_i}$ represents the $i$th row of matrix A, and $\vec{b_j}$ represents the $j$th row of matrix B, and $(AB)_{ij}$ represents the $ij$-th entry of the resulting matrix. \\
 \textbf{Important: Matrix multiplication is not commutative. $AB \neq BA$}
 
 \subsection{Transpose of Matrix}
@@ -609,7 +609,7 @@ Consider the same linear mapping as before, $g(x_1,x_2) = (2x_1+3x_2 , x_1)$. We
 Like mentioned previously, the matrix is the compilation of the images of the standard basis vectors of the domain. Since the domain of the mapping is $\R^2$, we consider\\
 \begin{center}
 $\vec{e_1} = \begin{bmatrix}1\\0\end{bmatrix}$
-$\vec{e_1} = \begin{bmatrix}0\\1\end{bmatrix}$
+$\vec{e_2} = \begin{bmatrix}0\\1\end{bmatrix}$
 \end{center}
 Carrying out the mapping,
 \begin{center}
@@ -1164,7 +1164,7 @@ These two homogenous equations define the set.
 \noindent
 \textbf{Shortest Distance (Plane)}: $||\vectorproj[n]{{PQ}}||$ where P is point on Place, Q is point not on plane.\\\\
 \noindent
-\textbf{Closest Point to a Plane}: $\vec{OR} = \vec{OQ} + \vec{QR} = \vec{OQ} + \vectorproj[n]{QP} where P is point on plane, Q is point not on plane R is point that has to be found$\\\\
+\textbf{Closest Point to a Plane}: $\vec{OR} = \vec{OQ} + \vec{QR} = \vec{OQ} + \vectorproj[n]{QP}$ where P is point on plane, Q is point not on plane R is point that has to be found\\\\
 \noindent
 \textbf{Volume of Parallelepiped}: V = $|\vec{u}\cdot\vec{w}$x$\vec{v}|$
 or V = $|det(\vec{u}\;\vec{w}\; \vec{v})|$ (This works for n-d parallelotrope)\\\\
