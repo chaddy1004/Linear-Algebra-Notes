@@ -82,6 +82,7 @@
 
 This is a summary note about Math115 written for the first year engineering students that takes the course. This is by no means affiliated with the course directly, but is meant to be used as a supplementary guideline for the students to use if they need it. This summary was written by the General WEEF TA, Chad Paik.\\
 The table of content shows the different sections, so feel free to look only in the section that one desires.\\
+This is simply a summary sheet from the actual textbook, An Introduction to Linear Algebra for Science and Engineering, written by Professor Dan Wolczuk. I did cite his work, and if there are any problems or if he asks me to take it down, I will promptly do so. I made this \textbf{purely} for the students' comfort for studying.\\
 Also, iff is shorthand for if and only if.
 
 \section{Chapter 1}
@@ -344,8 +345,8 @@ If you look at it carefully, these equations look like scalar equation of planes
 The textbook explains system of equation and elimination a lot better than I can paraphrase. Therefore, if you want to learn more about these, please refer to the textbook.
 
 \subsection{System of Equation in Matrix Form}
-System of equation can be expressed as an augumented matrix. This matrix is in the form of $[A|\vec{b}]$ where A is a matrix formed by the coefficients of the linear equations, and $\vec{b}$ is the vector made with the "answers" of of each equations. 
-Putting the above linear equation into an augumented matrix, we get 
+System of equation can be expressed as an augmented matrix. This matrix is in the form of $[A|\vec{b}]$ where A is a matrix formed by the coefficients of the linear equations, and $\vec{b}$ is the vector made with the "answers" of of each equations. 
+Putting the above linear equation into an augmented matrix, we get 
 $
 \begin{amatrix}{3}
    3 & 5 & 1 &2 \\ 7 & -2 &4 &9\\-6&3&2&1\\ 
@@ -410,7 +411,7 @@ RREF goes one step further:
 System of equations has three possibilities:
 \begin{enumerate}
 \item \textbf{Inconsistent, No Solution:} If a row is all zeros, but the augmented side is non zero. $[0 0|6]$
-\item \textbf{Consistent, Infinitely Many Solutions:} If a row is all zeros and the augumented side is zero. Another way of interpreting this is \textbf{if there are any variables that does not have a leading entry in REF}
+\item \textbf{Consistent, Infinitely Many Solutions:} If a row is all zeros and the augmented side is zero. Another way of interpreting this is \textbf{if there are any variables that does not have a leading entry in REF}
 \item \textbf{Consistent, Unique Solutions:} If a row is not all zeros, and the augmented side is any real number. Another way of interpreting is \textbf{if all of the variables have a leading entry in REF}
 \end{enumerate}
 \textbf{When tackling one of those questions where there are variables in matrix and ask for conditions on the variables for each situation, start row reducing first to put into REF.}\\
@@ -734,7 +735,7 @@ $A = \begin{bmatrix}$
  \end{center}
  Every time a swapping happens, multiply the determinant by -1.
  \item Adding a scalar multiple of one row/column to another row
- \item If one row/column of an nxn matrix contains only zeros, then det(A) = 0.\\
+ \item If one row/column of an $n$x$n$ matrix contains only zeros, then det(A) = 0.\\
  This also means that if there is a row or column that repeats, then det(A) = 0 since row reduction does not change the determinant.
  
 \end{enumerate}
@@ -745,7 +746,7 @@ A system of linear equation can be represented as $A\vec{x}=\vec{b}$ where $A$ i
 \begin{center}
 $x_i = detA_i/detA$
 \end{center}
-Where $A_i$ is A matrix but with ith column replaced with $\vec{b}$.
+Where $A_i$ is A matrix but with $i$th column replaced with $\vec{b}$.
 The advantage of Cramer's Rule is that it is possible to determine only one variable without solving for the whole system. Which means, if you only care about the value of one variable, you can reduce the amount of computation.\\
 \textbf{ex}\\
 Consider the system of equation \\
@@ -781,7 +782,7 @@ To find the eigenvectors associated with each eigenvalues, all you have to do is
 Note that since we already set our determinant of the system as 0, the resulting solution will have parameters. The eigenspace is described by the eigenvectors of the resulting matrix.\\
 
 \subsection{Algebraic and Geometric Multiplicity}
-When solving the characteriesic polynomial, there are times when the same root )the eigenvalues) appear more than once. For example, if there is a equation such as 
+When solving the characteristic polynomial, there are times when the same root )the eigenvalues) appear more than once. For example, if there is a equation such as 
 \begin{center}
 $0 = (\lambda -1)^2(\lambda +5)$
 \end{center}
@@ -1041,6 +1042,31 @@ $w_4 = r^{\frac{1}{n}}e^{i(\theta+2\pi k)/n} = 1^{\frac{1}{3}}e^{i(0+6\pi)/3} = 
 Notice how after $n-1$term, the roots are going to repeat itself.\\
 $n^{th}$ root questions are very straight forward, as you just need to use the formula that is derived from de Moivre's theorem.
 
+Another example:
+\begin{align*}
+5i &= 5e^{i(\frac{\pi}{2})} \\
+R &= 5 \\
+\theta &= \frac{\pi}{2}
+\end{align*}
+
+At $k=0$, 
+\begin{align*}
+w_0 &= 5^{\frac{1}{3}} e^{i(\frac{(\frac{\pi}{2})}{3})} \\
+&= 5^{\frac{1}{3}} e^{i(\frac{\pi}{6})} 
+\end{align*}
+
+At $k=1$, 
+\begin{align*}
+w_1 &= 5^{\frac{1}{3}} e^{i(\frac{\frac{\pi}{2} + 2\pi}{3})} \\
+&= 5^{\frac{1}{3}} e^{i(\frac{5\pi}{6})} 
+\end{align*}
+
+At $k=2$, 
+\begin{align*}
+w_2 &= 5^{\frac{1}{3}} e^{i(\frac{\frac{\pi}{2} + 4\pi}{3})} \\
+&= 5^{\frac{1}{3}} e^{i(\frac{9\pi}{6})} 
+\end{align*}
+
 \section{Vector Spaces}
 Vector space is any space that satisfies the 10 axioms that are found in your textbook (you know which one I am talking about). Luckily, as for final exam in Fall 2017, you do not need to memorize nor need to prove whether a space is a vector space or not. 
 Until now, we were only dealing with \textbf{vectors}, but \textbf{polynomials}, and \textbf{matrices} are other types of vectorspaces that satisfies the 10 axioms. Some notations are following: \\\\
@@ -1191,7 +1217,7 @@ or V = $|det(\vec{u}\;\vec{w}\; \vec{v})|$ (This works for n-d parallelotrope)\\
 \newpage
 \begin{thebibliography}{1}
 \bibitem{Textbook}
-D. Norman and D. Wolczuk, An introduction to linear algebra for science and engineering. Don Mills, Ont.: Addison Wesley, 2012.
+D. Norman and D. Wolczuk, An Introduction to Linear Algebra for Science and Engineering. Don Mills, Ont.: Addison Wesley, 2012.
 
 
 \end {thebibliography}
