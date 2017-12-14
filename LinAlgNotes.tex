@@ -112,7 +112,7 @@ $t \in  \R$
 \end{centering}
 
 \subsection{Directed Line Segment}
-To find the vector that forms between two points, you subtract two points. For example, if we have point $p = (P_1,P_2,P_3) and q = (Q_1,Q_2,Q_3)$, then the vector that is going to form that connects from P to Q is: \\
+To find the vector that forms between two points, you subtract two points. For example, if we have point $p = (P_1,P_2,P_3)$ and $q = (Q_1,Q_2,Q_3)$, then the vector that is going to form that connects from P to Q is: \\
 \begin{equation}
 \begin{split}
 \vec{PQ} &= q - p\\
@@ -123,7 +123,7 @@ Same procedure extends to $\R^n$
 
 \subsection{Equation of a Line}
 With the knowledge of vectors, it is possible to find equation of a line. \\
-Line consists of a point that it starts at, $\vec{p}$ and the direction vector, $\vec{d}$, as well as a scalar $t$ that determines the ''length'' of the direction vector.
+Line consists of a point that it starts at, $\vec{p}$, and the direction vector, $\vec{d}$, as well as a scalar $t$ that determines the ''length'' of the direction vector.
 The general equation of a line is
 \begin{equation}
 \vec{x} = \vec{p} + t\vec{d}
@@ -144,7 +144,7 @@ I will do two examples, one that is a subspace, and other one that is not a subs
 
 \subsubsection{Subspace Example 1}
 Prove or disprove that $S=\{\begin{bmatrix}x_1\\x_2\end{bmatrix} | x_2 = 2x_1\}$ is a subspace of $\R^2$.\\
-This is an equation of a line (you might recognize that if i express it as y=2x).\\
+This is an equation of a line (you might recognize that if I expressed it as y=2x).\\
 The general rule of thumb for approaching the subspace proof is to use LHS=RHS approach, where you go through LHS and RHS of a equation that you are trying to prove separately, and see if they are equal to each there at the end.\\
 \textbf{1.Zero Vector}\\
 $\vec{0} = \begin{bmatrix}0\\0\end{bmatrix}$\\
@@ -201,7 +201,7 @@ In conclusion, since the space has zero vector included, closed under addition, 
 
 \subsubsection{Subspace Example 2}
 Prove or disprove that $S=\{\begin{bmatrix}x_1\\x_2\end{bmatrix} | x_2 = {x_1}^2\}$ is a subspace of $\R^2$.\\
-This is an equation of a parabola (you might recognize that if i express it as $y=x^2$).\\
+This is an equation of a parabola (you might recognize that if I expressed it as $y=x^2$).\\
 The general rule of thumb is, that if there is multiplication, division or power of variables, the space is not a subspace.
 \textbf{Counter Example}
 I am going to choose two vectors that are part of the space,\\
@@ -215,7 +215,7 @@ $\vec{x}+\vec{y} = \begin{bmatrix}1+2\\1+4\end{bmatrix}$\\
 $\vec{x}+\vec{y} = \begin{bmatrix}3\\5\end{bmatrix}$\\
 \end{centering}
 Since $5\neq3^2$, it is not closed under addition.\\
-The space does not satisfy one of the condition, therefore the space is not a subspace.
+The space does not satisfy one of the conditions, therefore the space is not a subspace.
 
 \subsection{Linear Dependency}
 For a set of vector, $S = \{\vec{v_1},\vec{v_2},...,\vec{v_n}\}$, linear dependency is determined by the behaviour of this equation:
@@ -257,7 +257,7 @@ Norm of a vector is indicated with two vertical lines.
 \end{equation}
 \subsection{Dot Product}
 Dot product is very difficult to describe with words exactly what it is. However, it will help if you understand that the dot product between Force and Displacement is Work.\\
-Dot product has two definitions. They both yields the same result, but each of them are used in different situations.\\
+Dot product has two definitions. They both yield the same result, but each of them are used in different situations.\\
 \subsubsection{Unit Vector}
 With the knowledge of norm of a vector, it is possible to find the unit vector. Unit vector is a vector that has the same direction, but has magnitude of 1.\\
 Unit vector is calculated by dividing the vector by the norm. It is indicated with a hat on top of the vector.\\
@@ -319,7 +319,7 @@ n_1(x_1-p_1)+n_2(x_2-p_2)+n_3(x_3-p_3)=0\\
 n_1x_1 + n_2x_2 +n_3x_3 - (n_1p_1+n_2p_2+n_3p_3)= 0\\
 \end{split}
 \end{equation} 
-Since $(n_1p_1+n_2p_2+n_3p_3)$ are given numbers, it is possible to group it as another real number, $d$.\\
+Since $(n_1p_1+n_2p_2+n_3p_3)$ are given numbers, it is possible to group them as another real number, $d$.\\
 \begin{equation}
 \begin{split}
 n_1x_1 + n_2x_2 +n_3x_3 - d = 0\\
@@ -334,13 +334,13 @@ n_1x_1 + n_2x_2 +n_3x_3...n_nx_n = d\\
 In this case, it is not called scalar equation of a plane, but scalar equation of a hyperplane.
 
 \section{Chapter 2}
-Chapter 2 was introduction to matrices and system of linear equations. In this section, System of Linear Equations, Elimination, Matrices, REF and RREF, and Rank.\\
+Chapter 2 was introduction to matrices and system of linear equations. In this section, System of Linear Equations, Elimination, Matrices, REF and RREF, and Rank are discussed.\\
 (To be honest, explaining this chapter is really hard to do, so if my explanation is not as good as you want it to be, any feedback would be appreciated.)
 
 \subsection{System of Linear Equations}
-There are system of equations with certain solution.//
+There are systems of equations with certain solution.//
 For example, if we have a system of equation as following:\\
-$\begin{cases} 3x + 5y + z = 2\\ 7x ? 2y + 4z = 9 \\ -6x + 3y + 2z = 1\end{cases}$
+$\begin{cases} 3x + 5y + z = 2\\ 7x + 2y + 4z = 9 \\ -6x + 3y + 2z = 1\end{cases}$
 If you look at it carefully, these equations look like scalar equation of planes. The solution to this system of equation can be interpreted as the point that is in al three planes, or rather the intersection of the planes. 
 The textbook explains system of equation and elimination a lot better than I can paraphrase. Therefore, if you want to learn more about these, please refer to the textbook.
 
@@ -352,12 +352,12 @@ $
    3 & 5 & 1 &2 \\ 7 & -2 &4 &9\\-6&3&2&1\\ 
  \end{amatrix}
 $
-(Sorry, I didn't know how to make an augumented matrix with square bracket).\\
+(Sorry, I didn't know how to make an augmented matrix with square bracket).\\
 \subsubsection{Homogeneous System}
 If the system all equals to zero, meaning $\vec{b}$ is the zero vector, then the system is called \textbf{Homogeneous System}. $[A|\vec{0}]$.
 
 \subsection{Elementary Row Operations}
-Elementary Row Operations is a process that is used to eliminate rows in order to solve the system of equation. There are three type or ERO:
+Elementary Row Operations is a process that is used to eliminate rows in order to solve the system of equation. There are three types or ERO:
 \begin{enumerate}
 \item Multiply one row by a scalar that is not zero
 \item Swapping Rows
@@ -381,7 +381,7 @@ R_1-R_2
 \end{split}
 \end{equation}
 Above is not allowed since the row that is being changed ($R_2$) is being used to change other row ($R_1$).
-However, there are legal combination of ERO, such as,
+However, there are legal combinations of ERO, such as,
 \begin{equation}
 \begin{split}
 R_2-2R_1\\
@@ -486,7 +486,7 @@ Although Matrix Inverses are chapter 3.5, I decided to include them here as I be
 AB = I = BA
 \end{equation}
 then B is an inverse of A.
-It is important to note that inverses does not exist for all matrices. This is summed up by Invertible Matrix Theorem.\\
+It is important to note that inverses do not exist for all matrices. This is summed up by Invertible Matrix Theorem.\\
 Let A be an $nxn$ matrix, then the following statements are equivalent, meaning that if one statement is true, then other statements are true.
 
 \begin{enumerate}
@@ -497,7 +497,7 @@ Let A be an $nxn$ matrix, then the following statements are equivalent, meaning 
 \item{The columns of A are linearly independent}
 \item{The column space of A is $R^n$}
 \end{enumerate}
-(If I recall correctly, the last two items are not taught in the course anymore, but still is true).
+(If I recall correctly, the last two items are not taught in the course anymore, but still are true).
 
 \subsubsection{Process of Finding Inverse}
 The process of finding inverse is fairly long and tedious, but is very straight forward. To find the inverse of A, an $nxn$ matrix, we need to set up an augmented matrix like following:\\
@@ -598,8 +598,8 @@ Since \textbf{LHS} = \textbf{RHS}, the mapping $g(x_1,x_2)$ is a linear mapping.
 \subsection{Standard Matrix of a Linear Mapping}
 All linear mappings can be represented as a matrix mapping. This is done by forming a standard transformation matrix by compiling the images of the basis vectors.\\
 We are introduced to this important concept on how only standard basis vectors of the domain is needed to describe the transformation of any vector in that domain. This is because any vector in $\R^n$ can be described as linear combination of the standard basis vectors. Since linear mappings are linear, that means that if the vector can be represented as linear combination, then all we need is the behaviour of the standard basis vectors to characterize the mapping.\\
-If there exist if L that maps from $\R^n to \R^m$
-The standard matrix that describes the mapping is described by 
+If there exists if L that maps from $\R^n$ to $\R^m$,
+the standard matrix that describes the mapping is described by 
 
 \begin{equation}
 [L] = [L(\vec{e_1}) L(\vec{e_2}) ... L(\vec{e_n})]
@@ -653,7 +653,7 @@ Recall that codomain of a mapping is the number of rows, and domain of a mapping
 
 
 \subsection{Geometrical Transformation}
-Geometrical Transformation are specific types of linear/matrix mapping that can be described geometrically in space. These transformation include \textbf{Rotation, Stretch, Contraction/Dilation, Shear, and Reflections}. There is a document on learn that highlights all the geometrical transformations that you need. It has way more detail that I can ever put on a ''summary'' sheet, so go to that to Learn more.
+Geometrical Transformation are specific types of linear/matrix mapping that can be described geometrically in space. These transformations include \textbf{Rotation, Stretch, Contraction/Dilation, Shear, and Reflections}. There is a document on learn that highlights all the geometrical transformations that you need. It has way more detail that I can ever put on a ''summary'' sheet, so go to that to Learn more (may not be there if you are future student reading this note).
 
 \subsubsection{Representing Geometrical Transformation as Matrix}
 \textbf{THIS SECTION IS A VERY GOOD REMINDER TO STUDENTS}\\
@@ -782,7 +782,7 @@ To find the eigenvectors associated with each eigenvalues, all you have to do is
 Note that since we already set our determinant of the system as 0, the resulting solution will have parameters. The eigenspace is described by the eigenvectors of the resulting matrix.\\
 
 \subsection{Algebraic and Geometric Multiplicity}
-When solving the characteristic polynomial, there are times when the same root )the eigenvalues) appear more than once. For example, if there is a equation such as 
+When solving the characteristic polynomial, there are times when the same root (the eigenvalues) appear more than once. For example, if there is an equation such as 
 \begin{center}
 $0 = (\lambda -1)^2(\lambda +5)$
 \end{center}
@@ -838,7 +838,7 @@ If A and B are similar $n$ x $n$ matrices, then A and B have
 Since the diagonal matrix also follows the same relationship as the similar matrices, A and diagonal matrix D also has the same properties of similar matrices. Diagonal matrices are advantageous in calculating the determinant and rank since only diagonal terms exist in D matrix.
 
 \subsection{Diagonalization Theorem}\
-Not all matrices are diagonalizable, and there are few theorems that tell us whether a matrix i diagonalizable. \\
+Not all matrices are diagonalizable, and there are few theorems that tell us whether a matrix is diagonalizable. \\
 Although there is a very explicit and general theorem,\\
 \begin{center}
 \noindent
@@ -853,7 +853,7 @@ However, for the purposes digesting the theorem, the core of the above theorem i
 \noindent
 and from the above statement, we also know that:\\
 \begin{center}
-\textbf{If an $n$ x $n$ distinct eigenvalues, then A is diagonalizable}
+\textbf{If an $n$ x $n$ matrix has $n$ distinct eigenvalues, then A is diagonalizable}
 \end{center}
 \noindent
 This is where the theorem mentioned above that shows the relationship between the number of AM and GM.\\
@@ -891,7 +891,7 @@ As observed, the complex conjugate simply takes the negative of the imaginary po
 \begin{equation}
 \overline{z}z = x^2 + y^2
 \end{equation}
-This is same as the difference of square property ($(x+y)(x-y) = x^2 + y^2$. Notice that multiplying complex number with itself results in purely real number. This is used to perform division of complex numbers in rectangular form with this formula.\\
+This is same as the difference of square property $(x+y)(x-y) = x^2 + y^2$. Notice that multiplying complex number with itself results in purely real number. This is used to perform division of complex numbers in rectangular form with this formula.\\
 
 \begin{equation}
 \frac{z_1}{z_2} = \frac{z_1\overline{z_2}}{z_2\overline{z_2}}
@@ -913,7 +913,7 @@ Here are some properties of complex numbers that may be useful in solving questi
 \end{enumerate} \cite{Textbook}
 
 \subsection{Roots of Polynomial Equation}
-Theorem: For $P(x) =a_nx^n + ... + a_nx^1+a_0$, if Z is a root of $P(x)$ then $\overline{z}$ is also a root of $P(x)$.\\
+Theorem: For $P(x) =a_nx^n + ... + a_nx^1+a_0$, if $z$ is a root of $P(x)$ then $\overline{z}$ is also a root of $P(x)$.\\
 ex: $x^3 + 1= (x+1)(x^2-x+1)$ \\
 The first root is $x = -1 + 0i$ and its conjugate is $\overline{x} = -1 -0i$, which are both the roots since they are the same number.\\
 The second root, after using the quadratic formula, are\\
@@ -1039,7 +1039,7 @@ $w_1 = r^{\frac{1}{n}}e^{i(\theta+2\pi k)/n} = 1^{\frac{1}{3}}e^{i(0+2\pi)/3} = 
 $w_2 = r^{\frac{1}{n}}e^{i(\theta+2\pi k)/n} = 1^{\frac{1}{3}}e^{i(0+4\pi)/3} = 1^{\frac{1}{3}}e^{i4\pi/3}$\\
 \textbf{4th Root}\\
 $w_4 = r^{\frac{1}{n}}e^{i(\theta+2\pi k)/n} = 1^{\frac{1}{3}}e^{i(0+6\pi)/3} = 1^{\frac{1}{3}}e^{i6\pi/3} = 1$\\
-Notice how after $n-1$term, the roots are going to repeat itself.\\
+Notice how after $(n-1)$ term, the roots are going to repeat itself.\\
 $n^{th}$ root questions are very straight forward, as you just need to use the formula that is derived from de Moivre's theorem.
 
 Another example:
@@ -1082,7 +1082,7 @@ Define subspace generally, suppose $V$ is a vector space, a non-empty subset  $U
 \textbf{S1}: $x + y \in U, \; x,y \in U$\\
 \textbf{S2}: $tx \in U, \;, x\in U, t\in\R$\\ 
 \end{centering}
-(Zero vector existing is technically proven if the other two are proven, but you should still prove that the zero vector exists initially.
+(Zero vector existing is technically proven if the other two are proven, but you should still prove that the zero vector exists initially).
 
 \subsection{Homogeneous System of Linear Equation}
 You may encounter a type of question worded as such:\\
